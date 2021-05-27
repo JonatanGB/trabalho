@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
+
         function calculaMedia(notas) {
-            let somaNotas = 0
-            for (let nota of notas) {
-                somaNotas += notas
+            let soma = 0
+            for(let i = 0; i < 3; i++){
+                soma = soma + notas[i]
             }
-            
-            return somaNotas / 3
+            return soma / 3
         } 
         
         function cadastraNotas() {
@@ -26,9 +26,14 @@
             return notas
         }
 
+        let notas = cadastraNotas()
+        let media = calculaMedia(notas)
         function mostraMedia(media){
             alert(`A média é ${media.toFixed(2)}`)
         }
+
+        
+        mostraMedia(media)
 
     </script>
 </body>
