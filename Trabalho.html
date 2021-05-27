@@ -26,13 +26,12 @@
             return notas
         }
 
-        let notas = cadastraNotas()
-        let media = calculaMedia(notas)
         function mostraMedia(media){
             alert(`A média é ${media.toFixed(2)}`)
         }
 
-        
+        let notas = cadastraNotas()
+        let media = calculaMedia(notas)
         mostraMedia(media)
 
     </script>
